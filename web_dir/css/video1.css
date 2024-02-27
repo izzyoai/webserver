@@ -1,0 +1,80 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    padding: 0;
+    display: flex;
+    background-color: #7a419b;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#7c1599 0%,#921099 48%,#7e4ae8 100%);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+video
+{
+    max-width: 960px;
+    border: 5px solid rgba(0, 0, 0,0.2);
+}
+
+.input_process
+{
+    -webkit-appearance: none;
+    width: 960px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    border: 1px solid transparent;
+    margin-top: -8px;
+    border-image: linear-gradient(#4CAF50,#4CAF50) 0 fill;
+}
+input[type=range]::-webkit-slider-runnable-track
+{
+    height: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px #def3f8, inset 0 0.125em #0d1112;
+}
+input[type=range]::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    height: 25px;
+    width: 25px;
+    margin-top: -5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: solid 0.125em rgba(205, 224, 230, 0.5);
+    box-shadow: 0 .125em .125em #3b4547;
+}
+input[type=range]:focus
+{
+    outline: none;
+}
+
+
+.player_button
+{
+    align-items: center;
+}
+
+.button_play
+{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

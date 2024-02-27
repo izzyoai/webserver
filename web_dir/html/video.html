@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频播放</title>
+    <link rel="stylesheet" href="../css/video.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="player">
+        <video src="../video/1.mp4" class="player_video viewer">
+            <br>
+            <div class="player_controls">
+                <div class="progress">
+                    <div class="progress_filled">进度条</div>
+                </div>
+                <button class="player_button toggle" title="播放切换">播放</button>
+                <!-- 音量 -->
+                <input 
+                    type="range" 
+                    name="volume"
+                    class="player_slider"
+                    min="0"
+                    max="1"
+                    step="0.05" 
+                    value="1"
+                >
+                <input type="range"
+                    name="backRate"
+                    class="player_slider"
+                    min="0.5"
+                    max="2"
+                    step="0.1"
+                    value="1"
+                >
+                <button type="button" class="player_button">10》</button>
+                <button type="button" class="player_button">《10</button>
+    
+            </div>
+        </video>
+    </div>
+    
+</body>
+</html>

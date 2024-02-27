@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频播放</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/video1.css">
+</head>
+<body>
+    <div class="player">
+        <div class="player_video">
+            <video src="../video/1.mp4" controls>
+            </video>
+        </div>
+        <div class="process">
+            <input class="input_process" type="range" name="process_filled" id="process_filled_main" 
+            max="1" min="0" step="0.05" value="0" title="process">
+        </div>
+
+        <div class="player_button">
+            <button class="button_play">播放</button>
+            <button class="button_play">快进</button>
+            <button class="button_play">快退</button>
+            <button class="button_play">音量+</button>
+            <button class="button_play">音量-</button>
+            <button class="button_play">静音</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    padding: 0;
+    display: flex;
+    background-color: #7a419b;
+    min-height: 100vh;
+    background: linear-gradient(135deg,#7c1599 0%,#921099 48%,#7e4ae8 100%);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+video
+{
+    width: 960px;
+}
+
+.player{
+    max-width: 960x;
+    border: 5px solid rgba(0, 0, 0,0.2);
+}
